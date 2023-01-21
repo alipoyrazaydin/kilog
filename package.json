@@ -1,0 +1,26 @@
+{
+  "name": "kilog",
+  "version": "1.0.0",
+  "description": "a Node.JS Package that will help you to create logs in a Tree-View way.",
+  "main": "kiLog.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alipoyrazaydin/kiLog.git"
+  },
+  "keywords": [
+    "node-js-logger",
+    "console-log",
+    "console",
+    "log",
+    "node-js-log"
+  ],
+  "author": "alipoyrazaydin",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/alipoyrazaydin/kiLog/issues"
+  },
+  "homepage": "https://github.com/alipoyrazaydin/kiLog#readme"
+}
