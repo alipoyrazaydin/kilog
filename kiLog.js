@@ -12,7 +12,7 @@ module.exports = (logMark = false) => {
         errorNext: function(...args) {return global.error.call({ident: h.ident + "│ "}, h.ident+ "│\x1b[31m", ...args, '\x1b[90m')},
         errorEnd: function(...args) {return global.error.call({ident: h.ident + "┕ "}, h.ident+ "┕\x1b[31m", ...args, '\x1b[90m')},
     }}
-    global.log = function(...args) { console.log(M() + ' \x1b[37m', ...args);return more.call({ident:(this.ident === undefined ? "" : this.ident)}); };
-    global.verbose = function(...args) { if (process.verbose) console.log(M() + ' \x1b[37m', ...args); return more.call({ident:(this.ident === undefined ? "" : this.ident)}); };
-    global.error = function(...args) { console.error(M() + ' \x1b[37m', ...args); return more.call({ident:(this.ident === undefined ? "" : this.ident)}); };
+    global.log = function(...args) { console.log(M() + ' \x1b[37m', ...args);return m.call({ident:(this.ident === undefined ? "" : this.ident)}); };
+    global.verbose = function(...args) { if (process.verbose) console.log(M() + ' \x1b[37m', ...args); return m.call({ident:(this.ident === undefined ? "" : this.ident)}); };
+    global.error = function(...args) { console.error(M() + ' \x1b[37m', ...args); return m.call({ident:(this.ident === undefined ? "" : this.ident)}); };
 }
